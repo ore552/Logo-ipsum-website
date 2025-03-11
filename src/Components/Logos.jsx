@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import { Icons } from "../constants"
+import { Icons } from "../constants/"
 import { SectionWrapper } from '../hoc'
 import Aos from 'aos'
 import "aos/dist/aos.css"

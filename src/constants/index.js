@@ -1,14 +1,16 @@
-import logo1 from '../assets/logo1.svg'
-import logo2 from '../assets/logo2.svg'
-import logo3 from '../assets/logo3.svg'
-import logo4 from '../assets/logo4.svg'
-import logo5 from '../assets/logo5.svg'
-import icon1 from '../assets/icon1.svg'
-import icon2 from '../assets/icon2.svg'
-import icon3 from '../assets/icon3.svg'
+import {
+  icon1,
+  icon2,
+  icon3,
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+} from "../assets"
 
 
-const Icons = () => [
+const Icons = [
   {
     name: "first",
     icon: logo1,
