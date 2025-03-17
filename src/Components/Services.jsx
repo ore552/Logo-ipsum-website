@@ -19,7 +19,7 @@ const Services = () => {
             data-aos-duration="2000"
             className='w-[60vw] h-auto'
             key={service.name}
-            >
+            >--
                 <img src={service.icon} alt="" />
                 <h1 className='text-center font-bold text-[24px] leading-[36px] tracking-[-0.75px] pr-[4vw]'>{service.header}</h1>
                 <p className='w-[307px] text-center text-[16px] leading-[24px] text-[#696871] tracing-[-0.5px] font-[Mulish] mt-[20px]'>{service.para}</p>

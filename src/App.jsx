@@ -4,6 +4,7 @@ import Metrics from './Components/Metrics'
 import Navbar from './Components/Navbar'
 import Services from './Components/Services'
 import SubIndex from './Components/SubIndex'
+import SubPlans from './Components/SubPlans'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <SubIndex />
       <Metrics />
       <Services />
+      <SubPlans />
     </>
   )
 }
