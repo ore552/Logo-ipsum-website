@@ -15,7 +15,7 @@ function App() {
       <SubIndex />
       <Metrics />
       <Services />
-      <SubPlans />
+      {/* <SubPlans /> */}
     </>
   )
 }

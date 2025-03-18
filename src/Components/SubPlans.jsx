@@ -54,7 +54,7 @@ const SubPlans = () => {
                         <li key={spec} className='text-[#696871] text[17px] leading-[50px] tracking-[-0.53px] text-center'>{spec}</li>
                     ))}
                     </ul>
-                                      
+                    <button className='text-[#5454D4] bg-white w-[285px] h-[60px] leading-[28px] tracking-[-0.56px] font-bold rounded-[12px] mt-6'>{plan.button}</button>      
                 </div>
             ))}
         </div>
@@ -63,4 +63,4 @@ const SubPlans = () => {
   )
 }
 
-export default SubPlans
+export default (SubPlans, '')
