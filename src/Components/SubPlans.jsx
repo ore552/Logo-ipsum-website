@@ -21,7 +21,7 @@ function SubPlans() {
     };
 
   return (
-    <>
+    <div id='subplans'>
     <div
     data-aos="fade-down"
     data-aos-easing="linear"
@@ -65,7 +65,7 @@ function SubPlans() {
     </div>
 
     
-    </>
+    </div>
   )
 }
 

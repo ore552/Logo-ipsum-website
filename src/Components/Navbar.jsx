@@ -2,6 +2,8 @@ import { useState } from "react";
 import { logo, menu, close } from "../assets";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { sideVariants, itemVariants } from '../../utils/motion'
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,10 +31,21 @@ function Navbar() {
           </div>
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px]">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">Features</li>
-            <li className="cursor-pointer">Pricing</li>
-            <li className="cursor-pointer">Blog</li>
+            <Link to='/'>
+              <li>Home</li>
+            </Link>
+            <Link to='/subindex'>
+              <li>Features</li>
+            </Link>
+            <Link to='/metrics'>
+              <li>Pricing</li>
+            </Link>
+            <Link to='/services'>
+              <li>Services</li>
+            </Link>
+            <Link to='/subplans'>
+              <li>Plans</li>
+            </Link>
           </ul>
 
           <motion.button
@@ -56,7 +69,7 @@ function Navbar() {
               <img src={logo} alt="Logo for page" className="" />
             </div>
 
-            {/* Mobile menu button (hamburger) */}
+            {/* Mobile menu button (hamburger) */}   
             <div
               onClick={handleMobileMenuToggle}
             
@@ -85,7 +98,7 @@ function Navbar() {
           exit={{
             width: 0,
             transition: { delay: 0.7, duration: 0.3 }
-          }}
+          }}  
          >
         <motion.div 
         initial="closed"
@@ -94,10 +107,18 @@ function Navbar() {
         variants={sideVariants}
         className="container md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[350px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
           <ul className="text-[20px] mr-[-25px] p-5">
-            <motion.li variants={itemVariants} className="mb-6">Home</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Features</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Pricing</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Blog</motion.li>
+            
+              <motion.li variants={itemVariants} to className="mb-6">Home</motion.li>
+            
+            <Link to='/subindex'>
+              <motion.li variants={itemVariants} className="mb-6">Features</motion.li>
+            </Link>
+            <Link to='/metrics'>
+              <motion.li variants={itemVariants} className="mb-6">Pricing</motion.li>
+            </Link>
+            <Link to='/services'>
+              <motion.li variants={itemVariants} className="mb-6">Blog</motion.li>
+            </Link>
           </ul>
           <motion.button
             variants={itemVariants}

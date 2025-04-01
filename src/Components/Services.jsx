@@ -11,7 +11,7 @@ const Services = () => {
     }, []);
 
   return (
-    <div className='flex justify-start items-end h-[50vh] services'>
+    <div className='flex justify-start items-end h-[50vh] services' id='services'>
         {services.map((service) => (
             <div
             data-aos="flip-left"

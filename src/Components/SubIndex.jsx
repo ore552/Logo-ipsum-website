@@ -13,7 +13,7 @@ function SubIndex() {
     }, []);
 
   return (
-    <div className='subIndex flex justify-center items-center w-fll ml-[-4vw]'>
+    <div className='subIndex flex justify-center items-center w-fll ml-[-4vw]' id='subindex'>
         <motion.img 
         variants={zoomIn('0.2', '1' )}
         src={earth_dark}

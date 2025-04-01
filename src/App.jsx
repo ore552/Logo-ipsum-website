@@ -1,4 +1,5 @@
 import './App.css'
+import {Routes, Route} from 'react-router-dom' 
 import Hero from './Components/Hero'
 import Metrics from './Components/Metrics'
 import Navbar from './Components/Navbar'
@@ -10,12 +11,14 @@ import SubPlans from './Components/SubPlans'
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <SubIndex />
-      <Metrics />
-      <Services />
-      <SubPlans />
+      <Navbar/>
+      <Routes> 
+        <Route path='/' element={<Hero/>}/>
+        <Route path='/metrics' element={<Metrics/>}/>
+        <Route path='/subindex' element={<SubIndex/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/subplans' element={<SubPlans/>}/>
+      </Routes>
     </>
   )
 }

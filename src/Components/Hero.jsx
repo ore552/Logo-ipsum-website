@@ -17,7 +17,7 @@ function Hero() {
 
   return (
     <>
-   <section className="hero mt-20 flex w-[80vw] pl-[3vw] overflow-hidden">
+   <section  className="hero mt-20 flex w-[80vw] pl-[3vw] overflow-hidden">
       <motion.div variants={textVariant('.2')} className="hero-left w-[459px] h-[461px] mt-5 ml-[-4vw]">
 
         <h1 className='hero-head text-[80px] w-[12.2cm] h-[231px] leading-[77px] pl-[2.5vw] font-bold'>Grow your subscription business</h1>
