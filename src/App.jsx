@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Services from './Components/Services'
 import SubIndex from './Components/SubIndex'
 import SubPlans from './Components/SubPlans'
+import Blog from './Components/Blog'
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         <Route path='/subindex' element={<SubIndex/>}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/subplans' element={<SubPlans/>}/>
+        <Route path='/blog' element={<Blog/>}/>
       </Routes>
+      
     </>
   )
 }

@@ -46,6 +46,9 @@ function Navbar() {
             <Link to='/subplans'>
               <li>Plans</li>
             </Link>
+            <Link to='/blog'>
+              <li>Blog</li>
+            </Link>
           </ul>
 
           <motion.button
@@ -105,11 +108,13 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="container md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[350px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
-          <ul className="text-[20px] mr-[-25px] p-5">
+        className="container md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[490px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
+          <ul className="text-[20px] mr-[-25px] p-5">            
             
+            <Link to='/'> 
               <motion.li variants={itemVariants} to className="mb-6">Home</motion.li>
-            
+            </Link>
+
             <Link to='/subindex'>
               <motion.li variants={itemVariants} className="mb-6">Features</motion.li>
             </Link>
@@ -117,6 +122,14 @@ function Navbar() {
               <motion.li variants={itemVariants} className="mb-6">Pricing</motion.li>
             </Link>
             <Link to='/services'>
+              <motion.li variants={itemVariants} className="mb-6">Services</motion.li>
+            </Link>
+
+            <Link to='/subplans'>
+              <motion.li variants={itemVariants} className="mb-6">SubPlans</motion.li>
+            </Link>
+
+            <Link to='/blog'>
               <motion.li variants={itemVariants} className="mb-6">Blog</motion.li>
             </Link>
           </ul>
