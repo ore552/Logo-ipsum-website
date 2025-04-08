@@ -6,6 +6,7 @@ import Services from './Components/Services'
 import SubIndex from './Components/SubIndex'
 import SubPlans from './Components/SubPlans'
 import Blog from './Components/Blog'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path='/subplans' element={<SubPlans/>}/>
         <Route path='/blog' element={<Blog/>}/>
       </Routes>
-      
+      <Footer/>
     </>
   )
 }

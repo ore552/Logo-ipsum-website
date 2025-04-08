@@ -43,6 +43,33 @@
     background-color: #9F3919;
 }  
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 20px 40px;
+    color: #fff;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px; /* adds space between links */
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #aaa;
+  }
+  
+
 @media screen and (max-width: 800px) {
     .nav-full{
         display: none;
